@@ -101,11 +101,11 @@ void pushFront(node **head_ref, int newData)
 /*---- Find nth node ----*/
 node *findNth(node *head, int size, int n)
 {
-    n -= 1;
     if (n > size)
         return NULL;
     if (n == 1)
         return head;
+    n -= 1;
     node *temp = head;
     while (n--)
     {
